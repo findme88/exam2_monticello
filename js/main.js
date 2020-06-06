@@ -15,6 +15,7 @@ $(document).ready(function () {
     adaptiveHeight: true,
     slidesToShow: 3,
     speed: 4000,
+    autoplaySpeed: 4000,
     autoplay: true,
     pauseOnFocus: true,
     pauseOnHover: true,
