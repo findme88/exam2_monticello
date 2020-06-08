@@ -21,18 +21,17 @@ $('a[href*="#"]').on('click', function (e) {
 //   });
 // }
 
-// $(document).ready(function () {
+$(document).ready(function () {
 
-//   $(".slider").slick({
-//     arrows: true,
-//     dots: true,
-//     adaptiveHeight: true,
-//     slidesToShow: 3,
-//     speed: 2000,
-//     autoplaySpeed: 4000,
-//     autoplay: true,
-//     // pauseOnFocus: true,
-//     pauseOnHover: true,
-//     pauseOnDotsHover: true,
-//   });
-// });
+  $(".slider").slick({
+     dots: true,
+    adaptiveHeight: true,
+    slidesToShow: 3,
+    speed: 2000,
+    autoplaySpeed: 4000,
+    autoplay: true,
+    // pauseOnFocus: true,
+    pauseOnHover: true,
+    pauseOnDotsHover: true,
+  });
+});

@@ -1,9 +1,9 @@
 .news {
-  background: url("../images/Bg.png"),
+  background: url("../images/Bg.png") no-repeat center,
     linear-gradient(32deg, rgba(84, 128, 236, 1) 55%, rgba(9, 238, 235, 1) 100%);
   background-size: cover;
-  height: 80vh;
-  margin-top: 60px;
+  @include size(100%, 1000px);
+  margin-top: 160px;
   font-family: $Gotham_Book;
   color: $white;
   text-transform: uppercase;
@@ -26,14 +26,14 @@
     margin: 100px 215px 0 215px;
 
     &_block {
-      width: 370px;
-      height: 514px;
-      margin-left: 30px;
+      @include size(370px, 520px);
       background: $white;
       color: $black;
+      margin-right: 20px;
+      
 
       &_picture {
-        width: 370px;
+        max-width: 370px;
         height: 240px;
       }
 
@@ -43,8 +43,8 @@
       }
 
       &_info {
-        width: 320px;
-        height: 49px;
+        max-width: 320px;
+        height: 54px;
         font-size: 18px;
         text-transform: none;
         overflow: hidden;
@@ -53,49 +53,49 @@
         color: #4b5562;
         margin-left: 20px;
         overflow-y: scroll;
-      &::-webkit-scrollbar {
-        width: 2px;
-    }
+        &::-webkit-scrollbar {
+          width: 2px;
+        }
       }
 
-      &_author{
-          display: flex;
-          margin-top: 35px;
-          margin-left: 20px;
+      &_author {
+        display: flex;
+        margin-top: 35px;
+        margin-left: 20px;
       }
 
       &_authorpicfirst {
-          width: 60px;
-          height: 60px;
-        background: url("../images/foto/left.png")
+        width: 60px;
+        height: 60px;
+        background: url("../images/foto/left.png");
       }
 
       &_authorpicsecond {
         width: 60px;
         height: 60px;
-        background: url("../images/foto/center.png")
+        background: url("../images/foto/center.png");
       }
 
       &_authorpicthird {
         width: 60px;
         height: 60px;
-        background: url("../images/foto/right.png")
+        background: url("../images/foto/right.png");
       }
 
       &_authorinfo {
-          margin-left: 20px;
-          margin-top: 10px;
+        margin-left: 20px;
+        margin-top: 10px;
       }
 
       &_authorname {
-          font-size: 18px;
-          color: #2c4058
+        font-size: 18px;
+        color: #2c4058;
       }
 
       &_date {
-font-size: 14px;
-color: #55b7ff;
-margin-top: 12px;
+        font-size: 14px;
+        color: #55b7ff;
+        margin-top: 12px;
       }
     }
   }

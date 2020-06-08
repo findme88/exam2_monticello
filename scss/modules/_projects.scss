@@ -38,18 +38,22 @@
       left: 215px;
     }
 
-    &_right_title1 {
+    &_right {
+      margin-top: 130px;
+    
+
+    &_title1 {
       font-size: 22px;
       margin-bottom: 5px;
     }
 
-    &_right_title2 {
+    &_title2 {
       font-size: 44px;
       font-weight: bold;
       margin-bottom: 40px;
     }
 
-    &_right_info {
+    &_info {
       width: 460px;
       height: 78px;
       text-transform: none;
@@ -62,6 +66,7 @@
       &::-webkit-scrollbar {
         width: 2px;
     }
+  }
     }
 
     &_right_button {
@@ -91,7 +96,7 @@
 
       &_left {
           padding-left: 216px;
-          padding-top: 160px;
+          
       }
   }
 
