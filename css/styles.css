@@ -110,6 +110,15 @@ body, html {
   padding-top: 53px;
 }
 
+.header__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header__social_icon {
   padding-left: 20px;
 }

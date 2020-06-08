@@ -14,8 +14,13 @@
     padding-top: 53px;
   }
 
-  &__social_icon {
-    padding-left: 20px;
+  &__social {
+    display: flex;
+    align-items: center;
+
+    &_icon {
+      padding-left: 20px;
+    }
   }
 
   &__title {
@@ -52,8 +57,6 @@
     }
   }
 
-  
-
   &__circle {
     display: inline-block;
     width: 9px;
@@ -65,8 +68,6 @@
 
   &__text {
     font-size: 14px;
-    
-    
   }
 
   &__text:hover {

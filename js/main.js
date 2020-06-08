@@ -1,6 +1,18 @@
 "use strict";
 
 
+
+$(document).ready(function () {
+
+$('a[href*="#"]').on('click', function (e) {
+    e.preventDefault();
+   
+    $('html, body').animate({
+      scrollTop: $($(this).attr('href')).offset().top
+    }, 1500, 'linear');
+  });
+})
+
 // let map;
 // function initMap() {
 //   map = new google.maps.Map(document.getElementById("map"), {
@@ -10,7 +22,7 @@
 // }
 
 // $(document).ready(function () {
-    
+
 //   $(".slider").slick({
 //     arrows: true,
 //     dots: true,
