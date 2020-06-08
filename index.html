@@ -31,26 +31,30 @@
       <div class="container">
         <div class="header__top">
           <div class="header__logo">
-            <img src="images/Logo.png" alt="" />
+            <img src="images/Logo.png" alt="logo" />
           </div>
-          <ul class="nav">
+          <ul class="nav" >
             <li>
-              <a href="#about" data-menu="about">
+              <a href="#about" class="nav__item nav__item--active">
+                <span class="nav__circle"></span>
                 <span class="nav__text">About Us</span>
               </a>
             </li>
             <li>
-              <a href="#projects" data-menu="projects">
+              <a href="#projects" class="nav__item">
+                <span class="nav__circle"></span>
                 <span class="nav__text">projects</span>
               </a>
             </li>
             <li>
-              <a href="#news" data-menu="news">
+              <a href="#news" class="nav__item">
+                <span class="nav__circle"></span>
                 <span class="nav__text">news</span>
               </a>
             </li>
             <li>
-              <a href="#contact" data-menu="contact">
+              <a href="#contact" class="nav__item">
+                <span class="nav__circle"></span>
                 <span class="nav__text">contact</span>
               </a>
             </li>
@@ -81,9 +85,10 @@
         </div>
         <h1 class="header__title">Simple & mordern</h1>
         <h3 class="header__tagline">We make the world's beautiful every day</h3>
-        <div class="scroll">
+        <a href="#projects" >
+          <div class="scroll"  >
           <img class="scroll__icon" src="images/scroll.png" alt="" />
-        </div>
+        </div></a>
       </div>
     </header>
 
@@ -641,7 +646,7 @@
       </div>
     </section>
 
-    <section class="map" id="contact"></section>
+    <!-- <section class="map" id="contact"></section> -->
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/slick.js"></script>
