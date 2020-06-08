@@ -23,18 +23,23 @@
   &__slider {
     display: flex;
     justify-content: center;
-    margin: 100px 215px 0 215px;
+        margin: 100px auto;
+    max-width: 1300px;
 
     &_block {
       @include size(370px, 520px);
+      
       background: $white;
       color: $black;
-      margin-right: 20px;
+      // margin-right: 20px;
       
 
       &_picture {
-        max-width: 370px;
+        // max-width: 370px;
         height: 240px;
+        width: 100%;
+        
+        
       }
 
       &_title {
@@ -67,19 +72,22 @@
       &_authorpicfirst {
         width: 60px;
         height: 60px;
-        background: url("../images/foto/left.png");
+        background: url("../images/foto/left.png") no-repeat;
+        background-size: cover;
       }
 
       &_authorpicsecond {
         width: 60px;
         height: 60px;
-        background: url("../images/foto/center.png");
+        background: url("../images/foto/center.png") no-repeat center;
+        background-size: cover;
       }
 
       &_authorpicthird {
         width: 60px;
         height: 60px;
         background: url("../images/foto/right.png");
+        background-size: cover;
       }
 
       &_authorinfo {
