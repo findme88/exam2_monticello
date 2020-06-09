@@ -594,6 +594,14 @@ i {
   margin-bottom: 100px;
 }
 
+.gallery__360 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .gallery__left {
   padding-right: 10px;
 }
