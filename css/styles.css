@@ -73,7 +73,6 @@ img {
 
 html {
   height: 100%;
-  scroll-behavior: smooth;
 }
 
 body, html {
@@ -216,7 +215,7 @@ body, html {
   }
 }
 
-.projects {
+.about {
   max-width: 1600px;
   margin: 0 auto;
   font-family: "GothamBook", sans-serif;
@@ -224,14 +223,14 @@ body, html {
   text-transform: uppercase;
 }
 
-.projects__hr {
+.about__hr {
   border-bottom: 1px solid #2c4058;
   width: 100px;
   margin: 0 auto;
   margin-top: 100px;
 }
 
-.projects__title {
+.about__title {
   text-align: center;
   font-size: 44px;
   font-weight: bold;
@@ -239,20 +238,20 @@ body, html {
   margin-bottom: 100px;
 }
 
-.projects__top {
+.about__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
 }
 
-.projects__top_left_color {
+.about__top_left_color {
   width: 585px;
   height: 470px;
   background-color: #55b7ff;
 }
 
-.projects__top_left_img {
+.about__top_left_img {
   width: 630px;
   height: 470px;
   background: url("../images/topleft.png");
@@ -261,22 +260,22 @@ body, html {
   left: 215px;
 }
 
-.projects__top_right {
+.about__top_right {
   margin-top: 130px;
 }
 
-.projects__top_right_title1 {
+.about__top_right_title1 {
   font-size: 22px;
   margin-bottom: 5px;
 }
 
-.projects__top_right_title2 {
+.about__top_right_title2 {
   font-size: 44px;
   font-weight: bold;
   margin-bottom: 40px;
 }
 
-.projects__top_right_info {
+.about__top_right_info {
   width: 460px;
   height: 78px;
   text-transform: none;
@@ -288,11 +287,11 @@ body, html {
   overflow-y: scroll;
 }
 
-.projects__top_right_info::-webkit-scrollbar {
+.about__top_right_info::-webkit-scrollbar {
   width: 2px;
 }
 
-.projects__top_right_button {
+.about__top_right_button {
   margin-top: 36px;
   font-size: 14px;
   text-transform: uppercase;
@@ -304,7 +303,7 @@ body, html {
   margin-bottom: 60px;
 }
 
-.projects__top_right_button_map {
+.about__top_right_button_map {
   font-family: OpenSans;
   font-size: 18px;
   font-style: italic;
@@ -313,23 +312,27 @@ body, html {
   text-transform: none;
 }
 
-.projects__bottom {
+.about__bottom {
   margin-top: 140px;
 }
 
-.projects__bottom_left {
+.about__bottom_left {
   padding-left: 216px;
 }
 
-.projects__right_color {
+.about__right_color {
   background-color: #7e5aff;
   position: absolute;
   right: 0;
 }
 
-.projects__right_img {
+.about__right_img {
   background: url("../images/bottomright.png");
   left: 100px;
+}
+
+i {
+  margin-right: 10px;
 }
 
 .slider {
@@ -369,6 +372,7 @@ body, html {
   font-size: 0;
   width: 30px;
   height: 60px;
+  cursor: pointer;
 }
 
 .slick-arrow.slick-prev {
@@ -402,6 +406,7 @@ body, html {
 
 .slick-dots li.slick-active button {
   background-color: #fff;
+  cursor: pointer;
 }
 
 .slick-dots li button {
@@ -411,10 +416,12 @@ body, html {
   border-radius: 50%;
   border: 1px solid #fff;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .news {
-  background: url("../images/Bg.png") no-repeat center, linear-gradient(32deg, #5480ec 55%, #09eeeb 100%);
+  background: url("../images/Bg.png") no-repeat center, -webkit-gradient(linear, left bottom, left top, from(#3c7fd4), to(#24ccfa));
+  background: url("../images/Bg.png") no-repeat center, linear-gradient(to top, #3c7fd4, #24ccfa);
   background-size: cover;
   width: 100%;
   height: 1000px;
@@ -475,6 +482,7 @@ body, html {
   text-align: left;
   color: #4b5562;
   margin-left: 20px;
+  cursor: pointer;
   overflow-y: scroll;
 }
 
@@ -500,14 +508,14 @@ body, html {
 .news__slider_block_authorpicsecond {
   width: 60px;
   height: 60px;
-  background: url("../images/foto/center.png") no-repeat center;
+  background: url("../images/foto/center.png") no-repeat;
   background-size: cover;
 }
 
 .news__slider_block_authorpicthird {
   width: 60px;
   height: 60px;
-  background: url("../images/foto/right.png");
+  background: url("../images/foto/right.png") no-repeat;
   background-size: cover;
 }
 

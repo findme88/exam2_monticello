@@ -4,14 +4,23 @@
 
 $(document).ready(function () {
 
-$('a[href*="#"]').on('click', function (e) {
+$('a[href*="#news"]').on('click', function (e) {
     e.preventDefault();
    
     $('html, body').animate({
       scrollTop: $($(this).attr('href')).offset().top
-    }, 1500, 'linear');
+    }, 2500, 'linear');
   });
 })
+
+$('a[href*="#projects"]').on('click', function (e) {
+  e.preventDefault();
+ 
+  $('html, body').animate({
+    scrollTop: $($(this).attr('href')).offset().top
+  }, 1500, 'linear');
+});
+
 
 // let map;
 // function initMap() {
@@ -27,7 +36,7 @@ $(document).ready(function () {
      dots: true,
     // adaptiveHeight: true,
     slidesToShow: 3,
-    speed: 2000,
+    speed: 1000,
     autoplaySpeed: 4000,
     autoplay: true,
     // pauseOnFocus: true,
