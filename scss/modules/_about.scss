@@ -76,11 +76,20 @@
       text-decoration: none;
       color: $black;
       border: 1px solid $black;
-      padding: 20px 25px;
-
+      padding: 20px 45px;
       display: inline-block;
-
+      transition: all 0.4s;
       margin-bottom: 60px;
+
+      &:hover {
+        color: gray;
+        border: blue solid 1px;
+        background: linear-gradient(
+          32deg,
+          rgba(75, 199, 248, 0.7) 0%,
+          rgba(52, 212, 74, 0.7) 100%
+        )
+      }
     }
     &_right_button_map {
       font-family: OpenSans;

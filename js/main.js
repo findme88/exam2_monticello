@@ -13,7 +13,7 @@ $('a[href*="#news"]').on('click', function (e) {
   });
 })
 
-$('a[href*="#projects"]').on('click', function (e) {
+$('a[href*="#about"]').on('click', function (e) {
   e.preventDefault();
  
   $('html, body').animate({

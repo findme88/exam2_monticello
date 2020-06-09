@@ -1,4 +1,24 @@
 @charset "UTF-8";
+.button {
+  margin-top: 36px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2c4058;
+  border: 1px solid #2c4058;
+  padding: 20px 45px;
+  display: inline-block;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  margin-bottom: 60px;
+}
+
+.button:hover {
+  color: gray;
+  border: blue solid 1px;
+  background: linear-gradient(32deg, rgba(75, 199, 248, 0.7) 0%, rgba(52, 212, 74, 0.7) 100%);
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -298,9 +318,17 @@ body, html {
   text-decoration: none;
   color: #2c4058;
   border: 1px solid #2c4058;
-  padding: 20px 25px;
+  padding: 20px 45px;
   display: inline-block;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
   margin-bottom: 60px;
+}
+
+.about__top_right_button:hover {
+  color: gray;
+  border: blue solid 1px;
+  background: linear-gradient(32deg, rgba(75, 199, 248, 0.7) 0%, rgba(52, 212, 74, 0.7) 100%);
 }
 
 .about__top_right_button_map {
@@ -545,6 +573,56 @@ i {
 
 .picture__third {
   background: url("../images/joel-filipe-151690.png");
+}
+
+.gallery {
+  font-family: "GothamBook", sans-serif;
+  text-transform: uppercase;
+}
+
+.gallery__hr {
+  border-bottom: 1px solid #2c4058;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.gallery__title {
+  text-align: center;
+  font-size: 44px;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.gallery__left {
+  padding-right: 10px;
+}
+
+.gallery__left_img {
+  width: 580px;
+  height: 440px;
+}
+
+.gallery__right_top {
+  padding: 0px;
+  padding-right: 10px;
+}
+
+.gallery__right_bottom {
+  padding: 0px;
+}
+
+.gallery__right_img {
+  width: 285px;
+  height: 215px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.gallery__button {
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 160px;
 }
 
 .map {

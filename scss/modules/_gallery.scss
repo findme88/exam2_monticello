@@ -1,0 +1,57 @@
+.gallery {
+    font-family: $Gotham_Book;
+    text-transform: uppercase;
+
+    &__hr {
+        border-bottom: 1px solid #2c4058;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 100px;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 44px;
+        margin-top: 40px;
+        margin-bottom: 100px;
+        
+    }
+
+    &__left {
+        padding-right: 10px;
+        
+    }
+
+    &__left_img {
+        @include size(580px, 440px);
+        
+    }
+
+    &__right {
+                    
+        
+        &_top {
+            padding: 0px;
+            // margin-left: 10px;
+            padding-right: 10px;
+        }
+
+        &_bottom {
+            padding: 0px;
+        }
+    }
+
+    &__right_img {
+        @include size(285px, 215px);
+        margin-bottom: 10px;
+        display: block;
+                
+    }
+
+    &__button {
+        margin: auto;
+        margin-top: 60px;
+        margin-bottom: 160px;
+       
+    }
+}
