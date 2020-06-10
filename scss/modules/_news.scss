@@ -1,9 +1,9 @@
 .news {
-  background: url("../images/Bg.png") no-repeat center,
-  linear-gradient(to top, #3c7fd4, #24ccfa);
+  background: url("../images/news_Bg.png") no-repeat center,
+    linear-gradient(to top, #3c7fd4, #24ccfa);
   background-size: cover;
   @include size(100%, 1000px);
-  margin-top: 160px;
+  margin-top: 180px;
   font-family: $Gotham_Book;
   color: $white;
   text-transform: uppercase;
@@ -11,7 +11,7 @@
     border-bottom: 1px solid #f2f3f5;
     width: 100px;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 70px;
   }
 
   &__title {
@@ -23,23 +23,19 @@
   &__slider {
     display: flex;
     justify-content: center;
-        margin: 100px auto;
+    margin: 100px auto;
     max-width: 1300px;
 
     &_block {
       @include size(370px, 520px);
-      
+
       background: $white;
       color: $black;
       // margin-right: 20px;
-      
 
       &_picture {
-        // max-width: 370px;
         height: 240px;
         width: 100%;
-        
-        
       }
 
       &_title {

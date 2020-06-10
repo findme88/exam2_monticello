@@ -1,14 +1,16 @@
 .about {
   max-width: 1600px;
+  
   margin: 0 auto;
   font-family: $Gotham_Book;
   color: $black;
   text-transform: uppercase;
+  
   &__hr {
     border-bottom: 1px solid #2c4058;
     width: 100px;
     margin: 0 auto;
-    margin-top: 100px;
+        padding-top: 100px;
   }
 
   &__title {
@@ -99,6 +101,13 @@
       color: #2c4058;
       text-transform: none;
       
+      &:hover {
+
+        color: rebeccapurple;
+        .fa-map-marker {
+          color: red;
+        }
+      }
     }
   }
   &__bottom {
@@ -127,3 +136,6 @@ i {
   margin-right: 10px;
 }
 
+.fa-map-marker:hover {
+  color: red;
+}
