@@ -737,6 +737,11 @@ i {
 
 .form__contacts li {
   margin-bottom: 33px;
+  cursor: pointer;
+}
+
+.form__contacts .fa {
+  color: #7e5aff;
 }
 
 .form__data {

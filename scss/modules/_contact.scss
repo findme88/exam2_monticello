@@ -30,6 +30,11 @@
   &__contacts {
     li {
       margin-bottom: 33px;
+      cursor: pointer;
+    }
+
+    .fa {
+      color: #7e5aff;
     }
   }
 
