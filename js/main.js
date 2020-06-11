@@ -9,7 +9,7 @@ $('a[href*="#news"]').on('click', function (e) {
    
     $('html, body').animate({
       scrollTop: $($(this).attr('href')).offset().top
-    }, 2500, 'linear');
+    }, 2000, 'linear');
   });
 })
 
@@ -26,8 +26,19 @@ $('a[href*="#projects"]').on('click', function (e) {
  
   $('html, body').animate({
     scrollTop: $($(this).attr('href')).offset().top
-  }, 3500, 'linear');
+  }, 2500, 'linear');
 });
+
+$(document).ready(function () {
+
+  $('a[href*="#contact"]').on('click', function (e) {
+      e.preventDefault();
+     
+      $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top
+      }, 3000, 'linear');
+    });
+  })
 
 
 $(document).ready(function () {

@@ -21,6 +21,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 3;
   }
 
   &__left {
@@ -29,6 +30,14 @@
 
   &__left_img {
     @include size(580px, 440px);
+    transition: 1s;
+    position: relative;
+    z-index: 2;
+
+    &:hover {
+      transform: scale(1.1);
+      z-index: 2;
+    }
   }
 
   &__right {
@@ -46,6 +55,12 @@
     @include size(285px, 215px);
     margin-bottom: 10px;
     display: block;
+    transition: 1s;
+
+    &:hover {
+      transform: scale(.9);
+      
+    }
   }
 
   &__button {
